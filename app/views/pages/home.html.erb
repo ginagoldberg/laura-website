@@ -3,6 +3,6 @@
 <h1>Laura Goldberg</h1>
 
 <% @artworks.each do |artwork| %>
-  <h2><%= artwork.name %></h2>
+  <h2><%= link_to artwork.name, root_path(artwork.id) %></h2>
   <p><%= artwork.description %></p>
 <% end %>
