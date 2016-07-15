@@ -10,10 +10,10 @@ class PagesController < ApplicationController
     @artwork = Artwork.find(params[:id])
   end
 
-  # Check the code below
-  private
 
-  def params
-    params.require(:artwork).permit(:name, :description)
-  end
+  # private
+
+  # def art_params
+  #   params.require(:artwork).permit(:name, :description)
+  # end
 end

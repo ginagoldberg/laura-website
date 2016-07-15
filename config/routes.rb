@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
-  get '/:id', to: 'pages#show'
-
   get 'contact', to: 'pages#contact'
+
+  get '/artworks/:id', to: 'pages#show', as: 'artwork'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
