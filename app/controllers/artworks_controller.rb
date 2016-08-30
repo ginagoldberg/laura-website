@@ -1,9 +1,16 @@
 class ArtworksController < ApplicationController
   def new
+    @artwork = Artwork.new
   end
 
   def create
-    @artwork = Artwork.create(art_params)
+    @artwork = Artwork.new(art_params)
+
+    if @artwork.save
+      redirect_to root_path,  :notice => "Your new artwork was saved"
+    else
+      render 'new'
+    end
   end
 
   def edit
