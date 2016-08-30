@@ -4,4 +4,6 @@ class Artwork < ActiveRecord::Base
     :maximum =>50}
   validates :description, presence: true
 
+  mount_uploader :photo, PhotoUploader
+
   end

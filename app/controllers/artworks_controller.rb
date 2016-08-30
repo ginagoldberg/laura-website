@@ -39,7 +39,7 @@ before_action :set_artwork, only: [:edit, :update, :destroy]
   end
 
   def art_params
-    params.require(:artwork).permit(:name, :description)
+    params.require(:artwork).permit(:name, :description, :photo, :photo_cache)
   end
 end
 
