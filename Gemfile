@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #s Include Cloudinary image upload
 gem 'figaro'
+gem 'cloudinary', '1.1.0'
+gem 'carrierwave'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
