@@ -115,6 +115,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.18.4)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-pjax (1.0.0)
@@ -216,6 +217,7 @@ DEPENDENCIES
   figaro
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 4.2.6)
   rails_admin (>= 1.0.0.rc)
   remotipart!
