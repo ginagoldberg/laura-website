@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'pages#contact'
 
-  scope '/admin' do
-    resources :artworks, except: [:show, :index], path: ''
-  end
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
 end
