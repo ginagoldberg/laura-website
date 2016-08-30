@@ -4,6 +4,10 @@ Rails.application.configure do
   # Set Secret key base for heroku
   config.secret_key_base = ENV['SECRET_KEY_BASE']
 
+  # Set username and password for heroku
+  config.username = ENV['ADMIN_USERNAME']
+  config.password = ENV['ADMIN_PASSWORD']
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
