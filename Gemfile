@@ -23,10 +23,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-#s Include Cloudinary image upload
+# Include Cloudinary image upload
 gem 'figaro'
 gem 'cloudinary', '1.1.0'
 gem 'carrierwave'
+
+# Add admin cms
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
