@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
 
   scope '/admin' do
-    resources :artworks, except: [:show, :index], path: ''
+    resources :artworks, except: [:show, :index], path: 'art'
   end
 
 end
