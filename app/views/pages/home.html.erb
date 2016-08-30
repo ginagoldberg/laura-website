@@ -3,6 +3,8 @@
 <h1>Laura Goldberg</h1>
 
 <% @artworks.each do |artwork| %>
-  <h2><%= link_to artwork.name, artwork_path(artwork.id) %></h2>
-  <div><%= cl_image_tag artwork.photo, height: 300, width: 400, crop: :fill %></div>
+  <div>
+    <h2><%= link_to artwork.name, artwork_path(artwork.id) %></h2>
+    <%= cl_image_tag artwork.photo, height: 300, width: 400, crop: :fill %>
+  </div>
 <% end %>

@@ -1,8 +1,13 @@
 RailsAdmin.config do |config|
 
+ config.authorize_with do
+  authenticate_or_request_with_http_basic('Login required') do |username, password|
+    username == Rails.application.secrets.user &&
+    password == Rails.application.secrets.password
+  end
+end
 
-
-  config.actions do
+config.actions do
     dashboard                     # mandatory
     index                         # mandatory
     new
@@ -15,6 +20,4 @@ RailsAdmin.config do |config|
   end
 end
 
-  # config.authorize_with do |controller|
-  #   redirect_to main_app.root_path unless current_user && current_user.admin
-  # end
+
