@@ -6,4 +6,4 @@ class Artwork < ActiveRecord::Base
 
   mount_uploader :photo, PhotoUploader
 
-  end
+end
